@@ -149,7 +149,10 @@ module.exports = {
                 debug: false
               }
             ]],
-            plugins: [['@babel/plugin-syntax-object-rest-spread', {useBuiltIns: true}]]
+            plugins: [
+              ['@babel/plugin-syntax-object-rest-spread', {useBuiltIns: true}],
+              ['@babel/plugin-proposal-class-properties']
+            ]
           }
         }
       }
