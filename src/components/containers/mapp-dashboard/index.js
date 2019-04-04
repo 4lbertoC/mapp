@@ -11,7 +11,7 @@ export default class MappDashboard extends PolymerElement {
   }
 
   static get template() {
-    return html([`<style></style> HELLO DASHBOARD!`]);
+    return html([`<style></style> HELLO DASHBOARD! <user-icon name="Alberto"></user-icon>`]);
   }
 }
 
