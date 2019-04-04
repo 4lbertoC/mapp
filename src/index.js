@@ -20,7 +20,5 @@ const router = new Router(outlet);
 router.setRoutes([
   {path: '/',     component: 'mapp-login'},
   {path: '/dashboard',  component: 'mapp-dashboard'},
-  {path: '/completed',  component: 'mapp-completed'},
-  {path: '/upcoming',  component: 'mapp-upcoming'},
   {path: '/schedule-new-session',  component: 'mapp-schedule'},
 ]);
