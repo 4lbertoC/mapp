@@ -1,9 +1,9 @@
 
 import {PolymerElement, html} from '@polymer/polymer/polymer-element';
 
-// import css from './style.pcss';
-// import template from './template.html';
-// import '../../dumbs/sk-button';
+import css from './style.pcss';
+import boostrapOverrides from '../../../styles/bootstrap-overrides.pcss';
+import template from './template.html';
 
 export default class MappLogin extends PolymerElement {
   static get properties() {
@@ -11,7 +11,7 @@ export default class MappLogin extends PolymerElement {
   }
 
   static get template() {
-    return html([`<style></style> HELLO LOGIN! <a href="/dashboard">Click to login</a>`]);
+    return html([`<style include="granite-bootstrap"></style> <style>${boostrapOverrides}</style> <style>${css}</style> ${template}`]);
   }
 }
 
