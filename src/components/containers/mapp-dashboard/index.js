@@ -9,11 +9,9 @@ export default class MappDashboard extends PolymerElement {
       mentors: {
         value() {
           return [
-            { fullName: 'Karol Masiak', skills: [{ name: 'Java' }, { name: 'Semicolons' }, { name: 'Javascript' }] },
-            // { fullName: 'Damir Cohadarevic', skills: [{ name: 'Bots' }, { name: 'Tables' }] },
-            // { fullName: 'Damir Alibegovic', skills: [{ name: 'Easter eggs' }, { name: 'TOML' }] },
-            // { fullName: 'Krzysztof Sakwerda', skills: [{ name: 'Tables' }, { name: 'Big Data' }, { name: 'Semicolons' }] },
-            // { fullName: 'Michael Ehleben', skills: [{ name: 'Drawing' }, { name: 'Java' }] },
+            { fullName: 'Karol Masiak', skills: [{ name: 'Java' }] },
+            { fullName: 'Damir Cohadarevic', skills: [{ name: 'Bots' }, { name: 'Tables' }] },
+            { fullName: 'Michael Ehleben', skills: [{ name: 'Drawing' }, { name: 'Java' }] },
           ];
         }
       }
