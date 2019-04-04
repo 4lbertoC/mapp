@@ -6,6 +6,7 @@ import '@polymer/polymer';
 import '@polymer/polymer/lib/elements/dom-if';
 import '@polymer/polymer/lib/elements/dom-bind';
 import '@polymer/polymer/lib/elements/dom-module';
+import '@granite-elements/granite-bootstrap/granite-bootstrap';
 import './components/containers/sk-app';
 import './components/user-icon';
 import './components/containers/mapp-dashboard';

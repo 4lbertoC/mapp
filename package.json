@@ -76,6 +76,7 @@
     "xo": "0.24.0"
   },
   "dependencies": {
+    "@granite-elements/granite-bootstrap": "4.1.1-1",
     "@polymer/iron-icons": "^3.0.0-pre.10",
     "@polymer/polymer": "3.2.0",
     "@vaadin/router": "1.2.0",

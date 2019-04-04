@@ -1,8 +1,7 @@
-
 import {PolymerElement, html} from '@polymer/polymer/polymer-element';
 
 // import css from './style.pcss';
-// import template from './template.html';
+import template from './template.html';
 // import '../../dumbs/sk-button';
 
 export default class MappDashboard extends PolymerElement {
@@ -11,7 +10,7 @@ export default class MappDashboard extends PolymerElement {
   }
 
   static get template() {
-    return html([`<style></style> HELLO DASHBOARD! <user-icon name="Alberto"></user-icon>`]);
+    return html([`<style include="granite-bootstrap"></style> ${template}`]);
   }
 }
 
