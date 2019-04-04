@@ -117,7 +117,7 @@ module.exports = {
     path: OUTPUT_PATH,
     filename: 'bundle.js'
   },
-  devtool: 'cheap-source-map',
+  devtool: 'source-map',
   module: {
     rules: [
       {
@@ -141,12 +141,12 @@ module.exports = {
                 targets: {
                   browsers: [
                     // Best practice: https://github.com/babel/babel/issues/7789
-                    '>=1%',
+                    '>=5%',
                     'not ie 11',
                     'not op_mini all'
                   ]
                 },
-                debug: true
+                debug: false
               }
             ]],
             plugins: [['@babel/plugin-syntax-object-rest-spread', {useBuiltIns: true}]]

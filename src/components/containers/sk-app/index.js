@@ -3,7 +3,6 @@ import {PolymerElement, html} from '@polymer/polymer/polymer-element';
 
 import css from './style.pcss';
 import template from './template.html';
-import '../../dumbs/sk-button';
 
 export default class SkApp extends PolymerElement {
   static get properties() {
