@@ -1,0 +1,20 @@
+<div class="card mb-3">
+  <div class="row no-gutters">
+    <div class="col-md-4">
+      <div class="card-img-top">[[nameInitials]]</div>
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">2018-05-05 14:30 - 15:30</h5>
+        <p class="card-text">Session with [[fullName]]</p>
+        <p class="card-text">
+          <dom-repeat items={{skills}}>
+          <template>
+            <div class="badge badge-primary">{{item.name}}</div>
+          </template>
+        </dom-repeat>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
