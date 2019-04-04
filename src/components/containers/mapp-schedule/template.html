@@ -2,3 +2,10 @@
   <input type="search" id="search-mentor-query" class="form-control" placeholder="Search...">
   <button class="btn btn-primary mapp-schedule-filter-button">Filter</button>
 </div>
+<div class="mapp-schedule-mentor-list">
+  <dom-repeat items={{mentors}}>
+    <template>
+      <mapp-mentor-card full-name={{item.fullName}} skills={{item.skills}}></mapp-mentor-card>
+    </template>
+  </dom-repeat>
+</div>

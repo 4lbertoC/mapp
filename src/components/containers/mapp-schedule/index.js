@@ -7,7 +7,19 @@ import template from './template.html';
 
 export default class MappSchedule extends PolymerElement {
   static get properties() {
-    
+    return {
+      mentors: {
+        value() {
+          return [
+            { fullName: 'Karol Masiak', skills: [{ name: 'Java' }, { name: 'Semicolons' }, { name: 'Javascript' }] },
+            { fullName: 'Damir Cohadarevic', skills: [{ name: 'Bots' }, { name: 'Tables' }] },
+            { fullName: 'Damir Alibegovic', skills: [{ name: 'Easter eggs' }, { name: 'TOML' }] },
+            { fullName: 'Krzysztof Sakwerda', skills: [{ name: 'Tables' }, { name: 'Big Data' }, { name: 'Semicolons' }] },
+            { fullName: 'Michael Ehleben', skills: [{ name: 'Drawing' }, { name: 'Java' }] },
+          ];
+        }
+      }
+    };
   }
 
   static get template() {

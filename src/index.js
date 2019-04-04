@@ -6,13 +6,13 @@ import '@polymer/polymer/lib/elements/dom-if';
 import '@polymer/polymer/lib/elements/dom-repeat';
 import '@polymer/polymer/lib/elements/dom-bind';
 import '@polymer/polymer/lib/elements/dom-module';
+import '@polymer/polymer/lib/elements/dom-repeat';
 import '@granite-elements/granite-bootstrap/granite-bootstrap';
 import './components/user-icon';
 import './components/containers/mapp-dashboard';
 import './components/containers/mapp-login';
-import './components/containers/mapp-completed';
-import './components/containers/mapp-upcoming';
 import './components/containers/mapp-schedule';
+import './components/mapp-mentor-card';
 
 import {Router} from '@vaadin/router';
 

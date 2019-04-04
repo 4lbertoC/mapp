@@ -1,0 +1,14 @@
+<div class="card">
+  <div class="card-img-top">[[nameInitials]]</div>
+  <div class="card-body">
+    <div class="card-title">[[fullName]]</div>
+    <div class="card-text">
+      <dom-repeat items={{skills}}>
+        <template>
+          <div class="badge badge-primary">{{item.name}}</div>
+        </template>
+      </dom-repeat>
+    </div>
+    <button class="btn btn-primary">Select</button>
+  </div>
+</div>
