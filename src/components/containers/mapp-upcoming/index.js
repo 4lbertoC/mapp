@@ -5,6 +5,7 @@ import {PolymerElement, html} from '@polymer/polymer/polymer-element';
 // import '../../dumbs/sk-button';
 
 export default class MappUpcoming extends PolymerElement {
+  fullName;
   static get properties() {
     
   }
