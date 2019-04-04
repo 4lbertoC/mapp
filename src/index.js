@@ -12,6 +12,7 @@ import './components/user-icon';
 import './components/containers/mapp-dashboard';
 import './components/containers/mapp-login';
 import './components/containers/mapp-schedule';
+import './components/containers/mapp-mentor-profile';
 import './components/mapp-mentor-card';
 
 import {Router} from '@vaadin/router';
@@ -22,4 +23,5 @@ router.setRoutes([
   {path: '/',     component: 'mapp-login'},
   {path: '/dashboard',  component: 'mapp-dashboard'},
   {path: '/schedule-new-session',  component: 'mapp-schedule'},
+  {path: '/mentor-profile',  component: 'mapp-mentor-profile'},
 ]);

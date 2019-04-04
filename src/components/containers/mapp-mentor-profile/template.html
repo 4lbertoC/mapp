@@ -1,0 +1,27 @@
+<div class="card">
+  <div class="card-img-top">[[nameInitials]]</div>
+  <form class="card-body">
+    <h3 class="card-title">[[fullName]]</h3>
+    <div class="card-text" method="GET" action="/confirmation">
+      <h6>Select the skill</h6>
+      <dom-repeat items={{skills}}>
+        <template>
+          <label class="btn btn-secondary">
+            <input type="radio" name="skill" id={{item.name}}>{{item.name}}
+          </label>
+        </template>
+      </dom-repeat>
+      <h6>Select the time slot</h6>
+      <dom-repeat items={{timeSlots}}>
+        <template>
+          <label class="btn btn-secondary">
+            <input type="radio" name="timeSlots" id={{item}}>{{item}}
+          </label>
+        </template>
+      </dom-repeat>
+      <div class="footer">
+        <input type="submit" class="btn btn-primary" value="Schedule"/>
+      </div>
+    </div>
+  </form>
+</div>
