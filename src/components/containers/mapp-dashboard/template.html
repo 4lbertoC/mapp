@@ -4,7 +4,7 @@
 <div style="width: 100%;" class="col-md-12">
   <dom-repeat items={{mentors}}>
     <template>
-      <mapp-mentor-event full-name={{item.fullName}} skills={{item.skills}}></mapp-mentor-event>
+      <mapp-mentor-event full-name={{item.fullName}} skills={{item.skills}} start-date-time="{{item.startDateTime}}"></mapp-mentor-event>
     </template>
   </dom-repeat>
 </div>

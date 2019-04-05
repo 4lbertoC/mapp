@@ -1,11 +1,11 @@
-
 import {PolymerElement, html} from '@polymer/polymer/polymer-element';
-
+import * as moment from 'moment'
 import css from './style.pcss';
 import boostrapOverrides from '../../styles/bootstrap-overrides.pcss';
 import template from './template.html';
 
 export default class MappMentorEvent extends PolymerElement {
+
 
   static get properties() {
     return {
@@ -36,6 +36,17 @@ export default class MappMentorEvent extends PolymerElement {
       .slice(0, 2)
       .map(word => word.charAt(0).toUpperCase())
       .join(''));
+  }
+
+  sessionDate() {
+    return moment(this.get('startDateTime')).format('MMMM Do YYYY');
+  }
+
+  sessionTime() {
+    const fromTime = moment(this.get('startDateTime')).format('H:mm');
+    const toTime = moment(this.get('startDateTime')).add(1, 'hour').format('H:mm');
+
+    return `${fromTime} - ${toTime}`;
   }
 
   static get template() {
