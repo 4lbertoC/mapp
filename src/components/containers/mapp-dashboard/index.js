@@ -3,6 +3,8 @@ import {PolymerElement, html} from '@polymer/polymer/polymer-element';
 import css from './style.pcss';
 import template from './template.html';
 
+import mockSessions from '../../../mockData/sessions.json';
+
 export default class MappDashboard extends PolymerElement {
 
   connectedCallback() {
@@ -22,29 +24,16 @@ export default class MappDashboard extends PolymerElement {
         }
 
         this.set('mentors', mentorSessions);
+      })
+      .catch(() => {
+        this.set('mentors', mockSessions);
       });
   }
 
   static get properties() {
     return {
       mentors: {
-        value() {
-          return [
-            // {firstName: 'Karol', lastName: 'Masiak', skills: [{name: 'Java'}], startDateTime: '2019-01-05T10:00:00',},
-            // {
-            //   firstName: 'Damir',
-            //   lastName: 'Cohadarevic',
-            //   skills: [{name: 'Bots'}],
-            //   startDateTime: '2019-01-05T13:00:00'
-            // },
-            // {
-            //   firstName: 'Michael',
-            //   lastName: 'Ehleben',
-            //   skills: [{name: 'Drawing'}],
-            //   startDateTime: '2019-01-05T15:00:00'
-            // },
-          ];
-        }
+        type: Array
       }
     };
   }
