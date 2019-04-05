@@ -6,7 +6,7 @@
 <div class="mapp-schedule-mentor-list">
   <dom-repeat items={{mentors}}>
     <template>
-      <mapp-mentor-card first-name={{item.firstName}} last-name={{item.lastName}} skills={{item.skills}} actions={{item.actions}} profile-picture={{item.profilePictureLink}}></mapp-mentor-card>
+      <mapp-mentor-card id={{item.id}} first-name={{item.firstName}} last-name={{item.lastName}} skills={{item.skills}} actions={{item.actions}} profile-picture={{item.profilePictureLink}}></mapp-mentor-card>
     </template>
   </dom-repeat>
 </div>

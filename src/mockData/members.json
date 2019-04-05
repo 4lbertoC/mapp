@@ -1,0 +1,229 @@
+[
+  {
+    "id": 6,
+    "firstName": "Paola",
+    "lastName": "Valli",
+    "username": "pvalli",
+    "profilePictureLink": null,
+    "skills": [
+      {
+        "id": 1,
+        "name": "ui-design"
+      },
+      {
+        "id": 3,
+        "name": "python"
+      },
+      {
+        "id": 2,
+        "name": "sketch"
+      }
+    ],
+    "timeSlots": []
+  },
+  {
+    "id": 13,
+    "firstName": "Michael",
+    "lastName": "Ehleben",
+    "username": "mehleben",
+    "profilePictureLink": null,
+    "skills": [
+      {
+        "id": 9,
+        "name": "swift"
+      },
+      {
+        "id": 10,
+        "name": "unity3d"
+      },
+      {
+        "id": 8,
+        "name": "ios"
+      }
+    ],
+    "timeSlots": [
+      {
+        "id": 12,
+        "date": "2019-04-09T10:00:00"
+      },
+      {
+        "id": 11,
+        "date": "2019-04-09T08:00:00"
+      }
+    ]
+  },
+  {
+    "id": 18,
+    "firstName": "Damir",
+    "lastName": "Cohadarevic",
+    "username": "dcohadarevic",
+    "profilePictureLink": null,
+    "skills": [
+      {
+        "id": 14,
+        "name": "terraform"
+      },
+      {
+        "id": 15,
+        "name": "kubernetes"
+      },
+      {
+        "id": 3,
+        "name": "python"
+      }
+    ],
+    "timeSlots": [
+      {
+        "id": 17,
+        "date": "2019-04-10T12:00:00"
+      }
+    ]
+  },
+  {
+    "id": 24,
+    "firstName": "Eduard",
+    "lastName": "Schaeli",
+    "username": "eschaeli",
+    "profilePictureLink": null,
+    "skills": [
+      {
+        "id": 19,
+        "name": "ruby"
+      },
+      {
+        "id": 21,
+        "name": "c"
+      },
+      {
+        "id": 20,
+        "name": "cooking"
+      }
+    ],
+    "timeSlots": [
+      {
+        "id": 23,
+        "date": "2019-04-11T12:00:00"
+      },
+      {
+        "id": 22,
+        "date": "2019-04-11T07:00:00"
+      }
+    ]
+  },
+  {
+    "id": 30,
+    "firstName": "Fabian",
+    "lastName": "Mettler",
+    "username": "fmettler",
+    "profilePictureLink": null,
+    "skills": [
+      {
+        "id": 25,
+        "name": "c#"
+      },
+      {
+        "id": 27,
+        "name": "kafka"
+      },
+      {
+        "id": 26,
+        "name": "elixir"
+      }
+    ],
+    "timeSlots": [
+      {
+        "id": 29,
+        "date": "2019-04-12T09:00:00"
+      },
+      {
+        "id": 28,
+        "date": "2019-04-12T07:00:00"
+      }
+    ]
+  },
+  {
+    "id": 36,
+    "firstName": "Marcello",
+    "lastName": "Romanelli",
+    "username": "mromanelli",
+    "profilePictureLink": null,
+    "skills": [
+      {
+        "id": 32,
+        "name": "ror"
+      },
+      {
+        "id": 31,
+        "name": "js"
+      },
+      {
+        "id": 33,
+        "name": "sql"
+      }
+    ],
+    "timeSlots": [
+      {
+        "id": 35,
+        "date": "2019-04-12T09:00:00"
+      }
+    ]
+  },
+  {
+    "id": 42,
+    "firstName": "Thomas",
+    "lastName": "Gresch",
+    "username": "tgresch",
+    "profilePictureLink": null,
+    "skills": [
+      {
+        "id": 37,
+        "name": "arduino"
+      },
+      {
+        "id": 38,
+        "name": "3d-printing"
+      },
+      {
+        "id": 39,
+        "name": "dataprocessing"
+      }
+    ],
+    "timeSlots": [
+      {
+        "id": 40,
+        "date": "2019-04-12T07:00:00"
+      },
+      {
+        "id": 41,
+        "date": "2019-04-12T09:00:00"
+      }
+    ]
+  },
+  {
+    "id": 48,
+    "firstName": "Krzysztof",
+    "lastName": "Sakwerda",
+    "username": "krzysztof.sakwerda",
+    "profilePictureLink": null,
+    "skills": [
+      {
+        "id": 45,
+        "name": "typescript"
+      },
+      {
+        "id": 44,
+        "name": "slack"
+      }
+    ],
+    "timeSlots": [
+      {
+        "id": 47,
+        "date": "2019-03-15T14:00:00"
+      },
+      {
+        "id": 46,
+        "date": "2019-04-15T11:00:00"
+      }
+    ]
+  }
+]

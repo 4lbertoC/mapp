@@ -5,10 +5,15 @@ import css from './style.pcss';
 import boostrapOverrides from '../../styles/bootstrap-overrides.pcss';
 import template from './template.html';
 
+import profilePicturesMock from '../../mockData/profilePictures.json';
+
 export default class MappMentorCard extends PolymerElement {
 
   static get properties() {
     return {
+      id: {
+        type: String,
+      },
       firstName: {
         type: String
       },
@@ -38,6 +43,7 @@ export default class MappMentorCard extends PolymerElement {
       .map(word => word.charAt(0).toUpperCase())
       .join(''));
 
+    this.set('profilePicture', profilePicturesMock[this.get('id')]);
     this.set('showProfilePicture', !!this.get('profilePicture'));
   }
 

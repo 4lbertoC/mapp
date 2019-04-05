@@ -30,7 +30,7 @@ export default class MappConfirmation extends PolymerElement {
       },
       timeSlot: {
         type: String,
-        value: 'Jan 5th 2019, 13:00, 1h'
+        value: 'April 11th 2019, 7:00, 1h'
       },
       skill: {
         type: String,

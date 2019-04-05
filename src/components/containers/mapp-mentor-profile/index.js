@@ -7,6 +7,8 @@ import template from './template.html';
 
 import moment from 'moment';
 
+import profilePicturesMock from '../../../mockData/profilePictures.json';
+
 export default class MappMentorProfile extends PolymerElement {
   static get properties() {
     return {
@@ -44,10 +46,11 @@ export default class MappMentorProfile extends PolymerElement {
     const fetchResult = await fetch(`https://mapp.hackathon2019.dev.tda.link/v1/members/${id}`);
     const user = await fetchResult.json();
 
+    this.set('id', user.id);
     this.set('skills', user.skills);
     this.set('firstName', user.firstName);
     this.set('lastName', user.lastName);
-    this.set('profilePicture', user.profilePictureLink);
+    this.set('profilePicture', user.profilePictureLink || profilePicturesMock[user.id]);
     this.set('timeSlots', user.timeSlots.map(timeSlot => ({
       id,
       date: moment(timeSlot.date).format('MMM Do YYYY, HH:mm') + ', 1h'
