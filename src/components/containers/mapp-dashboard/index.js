@@ -9,9 +9,9 @@ export default class MappDashboard extends PolymerElement {
       mentors: {
         value() {
           return [
-            { fullName: 'Karol Masiak', skills: [{ name: 'Java' }], startDateTime: '2019-01-05T10:00:00', },
-            { fullName: 'Damir Cohadarevic', skills: [{ name: 'Bots' }], startDateTime: '2019-01-05T13:00:00' },
-            { fullName: 'Michael Ehleben', skills: [{ name: 'Drawing' }], startDateTime: '2019-01-05T15:00:00' },
+            { firstName: 'Karol', lastName: 'Masiak', skills: [{ name: 'Java' }], startDateTime: '2019-01-05T10:00:00', },
+            { firstName: 'Damir', lastName: 'Cohadarevic', skills: [{ name: 'Bots' }], startDateTime: '2019-01-05T13:00:00' },
+            { firstName: 'Michael', lastName: 'Ehleben', skills: [{ name: 'Drawing' }], startDateTime: '2019-01-05T15:00:00' },
           ];
         }
       }

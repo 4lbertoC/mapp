@@ -12,7 +12,8 @@ export default class MappConfirmation extends PolymerElement {
         type: Object,
         value() {
           return {
-            fullName: 'Damir Cohadarevic',
+            firstName: 'Damir',
+            lastName: 'Cohadarevic',
             role: 'Mentor'
           };
         }
@@ -21,14 +22,15 @@ export default class MappConfirmation extends PolymerElement {
         type: Object,
         value() {
           return {
-            fullName: 'Alberto Congiu',
+            firstName: 'Alberto',
+            lastName: 'Congiu',
             role: 'Mentee'
           };
         }
       },
       timeSlot: {
         type: String,
-        value: 'Wed 10 Apr, 10-11'
+        value: 'Jan 5th 2019, 13:00, 1h'
       },
       skill: {
         type: String,

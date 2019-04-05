@@ -5,13 +5,21 @@ import css from './style.pcss';
 import boostrapOverrides from '../../../styles/bootstrap-overrides.pcss';
 import template from './template.html';
 
+import moment from 'moment';
+
 export default class MappMentorProfile extends PolymerElement {
   static get properties() {
     return {
-      fullName: {
+      firstName: {
         type: String,
         value() {
-          return 'Damir Cohadarevic';
+          return 'Damir';
+        }
+      },
+      lastName: {
+        type: String,
+        value() {
+          return 'Cohadarevic';
         }
       },
       skills: {
@@ -39,7 +47,22 @@ export default class MappMentorProfile extends PolymerElement {
 
   connectedCallback() {
     super.connectedCallback();
-    this.set('nameInitials', this.get('fullName')
+    this.fetchUser();
+  }
+
+  async fetchUser() {
+    const { id } = this.location.params;
+    const fetchResult = await fetch(`https://mapp.hackathon2019.dev.tda.link/v1/members/${id}`);
+    const user = await fetchResult.json();
+
+    this.set('skills', user.skills);
+    this.set('firstName', user.firstName);
+    this.set('lastName', user.lastName);
+    this.set('timeSlots', user.timeSlots.map(timeSlot => ({
+      id,
+      date: moment(timeSlot.date).format('MMM Do YYYY, HH:mm') + ', 1h'
+    })));
+    this.set('nameInitials', [ user.firstName || '', user.lastName || '' ].join(' ')
       .split(' ')
       .slice(0, 2)
       .map(word => word.charAt(0).toUpperCase())

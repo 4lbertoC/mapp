@@ -2,7 +2,7 @@
 <div class="card">
   <div class="card-img-top">[[nameInitials]]</div>
   <form class="card-body" method="GET" action="/confirmation">
-    <h3 class="card-title">[[fullName]]</h3>
+    <h3 class="card-title">[[firstName]] [[lastName]]</h3>
     <div class="card-text">
       <h6>Select the skill</h6>
       <dom-repeat items={{skills}}>
@@ -16,7 +16,7 @@
       <dom-repeat items={{timeSlots}}>
         <template>
           <label class="btn btn-secondary">
-            <input type="radio" name="timeSlots" id={{item}}>{{item}}
+            <input type="radio" name="timeSlots" id={{item.id}}>{{item.date}}
           </label>
         </template>
       </dom-repeat>

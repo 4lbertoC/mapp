@@ -9,7 +9,10 @@ export default class MappMentorCard extends PolymerElement {
 
   static get properties() {
     return {
-      fullName: {
+      firstName: {
+        type: String
+      },
+      lastName: {
         type: String
       },
       nameInitials: {
@@ -26,7 +29,7 @@ export default class MappMentorCard extends PolymerElement {
 
   connectedCallback() {
     super.connectedCallback();
-    this.set('nameInitials', this.get('fullName')
+    this.set('nameInitials', [this.get('firstName') || '', this.get('lastName') || ''].join(' ')
       .split(' ')
       .slice(0, 2)
       .map(word => word.charAt(0).toUpperCase())
