@@ -26,6 +26,6 @@ router.setRoutes([
   {path: '/',     component: 'mapp-login'},
   {path: '/dashboard',  component: 'mapp-dashboard'},
   {path: '/schedule-new-session',  component: 'mapp-schedule'},
-  {path: '/mentor-profile',  component: 'mapp-mentor-profile'},
+  {path: '/mentor-profile/:id',  component: 'mapp-mentor-profile'},
   {path: '/confirmation',  component: 'mapp-confirmation'},
 ]);

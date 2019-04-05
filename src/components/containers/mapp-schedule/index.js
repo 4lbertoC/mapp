@@ -12,11 +12,10 @@ export default class MappSchedule extends PolymerElement {
       return response.json();
     })
       .then((myJson) => {
-        console.log('mentors', this.mentors);
         for (const mentor of myJson) {
           mentor.actions = [{
             name: 'Schedule',
-            href: '/mentor-profile?id=' + mentor.id
+            href: '/mentor-profile/' + mentor.id
           }]
         }
         this.set('mentors', myJson);
