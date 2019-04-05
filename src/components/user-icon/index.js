@@ -3,14 +3,9 @@ import css from './style.pcss';
 import template from './template.html';
 
 
-
 export default class UserIcon extends PolymerElement {
-  static get properties() {
-    return {
-      name: {
-        type: String
-      },
-    };
+  getUserName() {
+    return sessionStorage.getItem('username');
   }
 
   static get template() {
