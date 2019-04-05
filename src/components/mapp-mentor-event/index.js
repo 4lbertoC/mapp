@@ -5,7 +5,7 @@ import boostrapOverrides from '../../styles/bootstrap-overrides.pcss';
 import template from './template.html';
 
 export default class MappMentorEvent extends PolymerElement {
-
+  mentoringSessionDurationInHours = 1;
 
   static get properties() {
     return {
@@ -44,7 +44,7 @@ export default class MappMentorEvent extends PolymerElement {
 
   sessionTime() {
     const fromTime = moment(this.get('startDateTime')).format('H:mm');
-    const toTime = moment(this.get('startDateTime')).add(1, 'hour').format('H:mm');
+    const toTime = moment(this.get('startDateTime')).add(this.mentoringSessionDurationInHours, 'hour').format('H:mm');
 
     return `${fromTime} - ${toTime}`;
   }
