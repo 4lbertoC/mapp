@@ -1,20 +1,17 @@
+<mapp-logo></mapp-logo>
 <user-icon class="user-box" name="Alberto"></user-icon>
 
-<a href="completed">
-  <div class="alert alert-primary" role="alert">
-    Completed mentoring sessions
-  </div>
-</a>
-
-<a href="upcoming">
-  <div class="alert alert-primary" role="alert">
-    Upcoming mentoring sessions
-  </div>
-</a>
+<h4>Upcoming sessions</h4>
+<div>
+  <dom-repeat items={{mentors}}>
+    <template>
+      <mapp-mentor-event full-name={{item.fullName}} skills={{item.skills}} start-date-time="{{item.startDateTime}}"></mapp-mentor-event>
+    </template>
+  </dom-repeat>
+</div>
 
 <a href="schedule-new-session">
   <div class="alert alert-success" role="alert">
     Schedule a new session
   </div>
 </a>
-
