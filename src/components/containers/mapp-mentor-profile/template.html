@@ -1,6 +1,12 @@
 <mapp-logo></mapp-logo>
 <div class="card">
-  <div class="card-img-top">[[nameInitials]]</div>
+  <template is="dom-if" if={{showProfilePicture}}>
+    <img class="card-img-top" src={{profilePicture}}/>
+  </template>
+  <template is="dom-if" if={{!showProfilePicture}}>
+    <div class="card-img-top">[[nameInitials]]</div>
+  </template>
+    
   <form class="card-body" method="GET" action="/confirmation">
     <h3 class="card-title">[[firstName]] [[lastName]]</h3>
     <div class="card-text">

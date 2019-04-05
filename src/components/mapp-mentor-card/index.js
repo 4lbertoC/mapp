@@ -23,6 +23,9 @@ export default class MappMentorCard extends PolymerElement {
       },
       actions: {
         type: Array
+      },
+      profilePicture: {
+        type: String
       }
     };
   }
@@ -34,6 +37,8 @@ export default class MappMentorCard extends PolymerElement {
       .slice(0, 2)
       .map(word => word.charAt(0).toUpperCase())
       .join(''));
+
+    this.set('showProfilePicture', !!this.get('profilePicture'));
   }
 
   static get template() {

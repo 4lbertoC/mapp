@@ -27,6 +27,9 @@ export default class MappMentorProfile extends PolymerElement {
       },
       timeSlots: {
         type: Array
+      },
+      profilePicture: {
+        type: String
       }
     };
   }
@@ -44,6 +47,7 @@ export default class MappMentorProfile extends PolymerElement {
     this.set('skills', user.skills);
     this.set('firstName', user.firstName);
     this.set('lastName', user.lastName);
+    this.set('profilePicture', user.profilePictureLink);
     this.set('timeSlots', user.timeSlots.map(timeSlot => ({
       id,
       date: moment(timeSlot.date).format('MMM Do YYYY, HH:mm') + ', 1h'
@@ -53,6 +57,8 @@ export default class MappMentorProfile extends PolymerElement {
       .slice(0, 2)
       .map(word => word.charAt(0).toUpperCase())
       .join(''));
+
+    this.set('showProfilePicture', !!this.get('profilePicture'));
   }
 
   static get template() {
