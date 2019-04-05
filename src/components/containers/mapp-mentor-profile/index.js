@@ -13,34 +13,20 @@ export default class MappMentorProfile extends PolymerElement {
       firstName: {
         type: String,
         value() {
-          return 'Damir';
+          return 'Loading...';
         }
       },
       lastName: {
         type: String,
         value() {
-          return 'Cohadarevic';
+          return '';
         }
       },
       skills: {
-        type: Array,
-        value() {
-          return [
-            { name: 'Bots' },
-            { name: 'Tables' }
-          ]
-        }
+        type: Array
       },
       timeSlots: {
-        type: Array,
-        value() {
-          return [
-            'Mon 8 Apr, 10-11',
-            'Wed 10 Apr, 10-11',
-            'Mon 15 Apr, 10-11',
-            'Wed 17 Apr, 10-11',
-          ]
-        }
+        type: Array
       }
     };
   }

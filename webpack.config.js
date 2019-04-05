@@ -83,7 +83,7 @@ const renderHtmlPlugins = () =>
       compile: true,
       excludeAssets: [/(bundle|polyfills)(\..*)?\.js$/],
       paths: {
-        webcomponents: './vendor/webcomponents-loader.js'
+        webcomponents: '/vendor/webcomponents-loader.js'
       }
     }),
     new HtmlWebpackExcludeAssetsPlugin(),
@@ -115,6 +115,7 @@ module.exports = {
   entry: './src/index.js',
   output: {
     path: OUTPUT_PATH,
+    publicPath: '/',
     filename: 'bundle.js'
   },
   devtool: 'source-map',
