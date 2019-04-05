@@ -12,8 +12,8 @@ export default class MappConfirmation extends PolymerElement {
         type: Object,
         value() {
           return {
-            firstName: 'Damir',
-            lastName: 'Cohadarevic',
+            firstName: 'Petar',
+            lastName: '',
             role: 'Mentor'
           };
         }
@@ -34,7 +34,7 @@ export default class MappConfirmation extends PolymerElement {
       },
       skill: {
         type: String,
-        value: 'Bots'
+        value: 'scala'
       }
     };
   }
