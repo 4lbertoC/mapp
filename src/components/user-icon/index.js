@@ -5,7 +5,7 @@ import template from './template.html';
 
 export default class UserIcon extends PolymerElement {
   getUserName() {
-    return sessionStorage.getItem('username');
+    return sessionStorage.getItem('username') !== 'undefined' ? sessionStorage.getItem('username') : 'User';
   }
 
   static get template() {
