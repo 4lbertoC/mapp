@@ -1,7 +1,12 @@
 <div class="card mb-3">
   <div class="row no-gutters">
     <div class="col-md-4">
-      <div class="card-img-top">[[nameInitials]]</div>
+      <template is="dom-if" if={{showProfilePicture}}>
+        <div class="card-img-top" style="background-image: url('{{profilePicture}}'); background-position: center; background-size: 100%;"></div>
+      </template>
+      <template is="dom-if" if={{!showProfilePicture}}>
+        <div class="card-img-top">[[nameInitials]]</div>
+      </template>
     </div>
     <div class="col-md-8">
       <div class="card-body">

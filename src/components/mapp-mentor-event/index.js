@@ -4,11 +4,16 @@ import css from './style.pcss';
 import boostrapOverrides from '../../styles/bootstrap-overrides.pcss';
 import template from './template.html';
 
+import profilePicturesMock from '../../mockData/profilePictures.json';
+
 export default class MappMentorEvent extends PolymerElement {
   mentoringSessionDurationInHours = 1;
 
   static get properties() {
     return {
+      id: {
+        type: String
+      },
       startDateTime: {
         type: String
       },
@@ -28,6 +33,9 @@ export default class MappMentorEvent extends PolymerElement {
             { name: 'Java' },
           ];
         }
+      },
+      profilePicture: {
+        type: String
       }
     };
   }
@@ -39,6 +47,9 @@ export default class MappMentorEvent extends PolymerElement {
       .slice(0, 2)
       .map(word => word.charAt(0).toUpperCase())
       .join(''));
+
+    this.set('profilePicture', profilePicturesMock[this.get('id')]);
+    this.set('showProfilePicture', !!this.get('profilePicture'));
   }
 
   sessionDate() {
