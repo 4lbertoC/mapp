@@ -1,7 +1,7 @@
 <mapp-logo></mapp-logo>
 <div class="card">
   <template is="dom-if" if={{showProfilePicture}}>
-    <img class="card-img-top" src={{profilePicture}}/>
+    <div class="card-img-top" style="background-image: url('{{profilePicture}}'); background-position: center; background-size: 100%;"></div>
   </template>
   <template is="dom-if" if={{!showProfilePicture}}>
     <div class="card-img-top">[[nameInitials]]</div>
