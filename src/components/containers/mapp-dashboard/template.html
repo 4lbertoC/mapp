@@ -1,7 +1,8 @@
+<mapp-logo></mapp-logo>
 <user-icon class="user-box" name="Alberto"></user-icon>
 
 <h4>Upcoming sessions</h4>
-<div style="width: 100%;" class="col-md-12">
+<div>
   <dom-repeat items={{mentors}}>
     <template>
       <mapp-mentor-event full-name={{item.fullName}} skills={{item.skills}} start-date-time="{{item.startDateTime}}"></mapp-mentor-event>

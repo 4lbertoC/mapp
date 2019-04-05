@@ -15,6 +15,7 @@ import './components/containers/mapp-schedule';
 import './components/containers/mapp-mentor-profile';
 import './components/mapp-mentor-card';
 import './components/mapp-mentor-event';
+import './components/mapp-logo';
 
 import {Router} from '@vaadin/router';
 
