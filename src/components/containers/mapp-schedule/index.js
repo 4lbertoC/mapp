@@ -12,6 +12,13 @@ export default class MappSchedule extends PolymerElement {
       return response.json();
     })
       .then((myJson) => {
+        myJson = myJson.concat([
+          { firstName: 'Karol', lastName: 'Masiak', skills: [{ name: 'Java' }, { name: 'Semicolons' }, { name: 'Javascript' }] },
+          { firstName: 'Damir', lastName: 'Cohadarevic', skills: [{ name: 'Bots' }, { name: 'Tables' }] },
+          { firstName: 'Damir', lastName: 'Alibegovic', skills: [{ name: 'Easter eggs' }, { name: 'TOML' }] },
+          { firstName: 'Krzysztof', lastName: 'Sakwerda', skills: [{ name: 'Tables' }, { name: 'Big Data' }, { name: 'Semicolons' }] },
+          { firstName: 'Michael', lastName: 'Ehleben', skills: [{ name: 'Drawing' }, { name: 'Java' }] },
+        ]);
         for (const mentor of myJson) {
           mentor.actions = [{
             name: 'Schedule',
