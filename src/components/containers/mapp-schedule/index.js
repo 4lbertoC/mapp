@@ -10,12 +10,13 @@ export default class MappSchedule extends PolymerElement {
     return {
       mentors: {
         value() {
+          const actions = [{ name: 'Schedule', href: '/mentor-profile' }]
           return [
-            { fullName: 'Karol Masiak', skills: [{ name: 'Java' }, { name: 'Semicolons' }, { name: 'Javascript' }] },
-            { fullName: 'Damir Cohadarevic', skills: [{ name: 'Bots' }, { name: 'Tables' }] },
-            { fullName: 'Damir Alibegovic', skills: [{ name: 'Easter eggs' }, { name: 'TOML' }] },
-            { fullName: 'Krzysztof Sakwerda', skills: [{ name: 'Tables' }, { name: 'Big Data' }, { name: 'Semicolons' }] },
-            { fullName: 'Michael Ehleben', skills: [{ name: 'Drawing' }, { name: 'Java' }] },
+            { fullName: 'Karol Masiak', skills: [{ name: 'Java' }, { name: 'Semicolons' }, { name: 'Javascript' }], actions },
+            { fullName: 'Damir Cohadarevic', skills: [{ name: 'Bots' }, { name: 'Tables' }], actions },
+            { fullName: 'Damir Alibegovic', skills: [{ name: 'Easter eggs' }, { name: 'TOML' }], actions },
+            { fullName: 'Krzysztof Sakwerda', skills: [{ name: 'Tables' }, { name: 'Big Data' }, { name: 'Semicolons' }], actions },
+            { fullName: 'Michael Ehleben', skills: [{ name: 'Drawing' }, { name: 'Java' }], actions },
           ];
         }
       }

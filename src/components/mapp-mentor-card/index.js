@@ -16,13 +16,10 @@ export default class MappMentorCard extends PolymerElement {
         type: String
       },
       skills: {
-        type: Array,
-        value() {
-          return [
-            { name: 'Java' },
-            { name: 'Python' },
-          ];
-        }
+        type: Array
+      },
+      actions: {
+        type: Array
       }
     };
   }

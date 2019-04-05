@@ -1,7 +1,8 @@
 <div class="card">
   <div class="card-img-top">[[nameInitials]]</div>
   <div class="card-body">
-    <div class="card-title">[[fullName]]</div>
+    <h4 class="card-title">[[fullName]]</h4>
+    <h6 class="card-subtitle">[[role]]</h6>
     <div class="card-text">
       <dom-repeat items={{skills}}>
         <template>
@@ -9,6 +10,10 @@
         </template>
       </dom-repeat>
     </div>
-    <a class="btn btn-primary" href="/mentor-profile">Select</a>
+    <dom-repeat items={{actions}}>
+      <template>
+        <a class="btn btn-primary" href={{item.href}}>{{item.name}}</a>
+      </template>
+    </dom-repeat>
   </div>
 </div>

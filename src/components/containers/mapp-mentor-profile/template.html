@@ -1,8 +1,8 @@
 <div class="card">
   <div class="card-img-top">[[nameInitials]]</div>
-  <form class="card-body">
+  <form class="card-body" method="GET" action="/confirmation">
     <h3 class="card-title">[[fullName]]</h3>
-    <div class="card-text" method="GET" action="/confirmation">
+    <div class="card-text">
       <h6>Select the skill</h6>
       <dom-repeat items={{skills}}>
         <template>
